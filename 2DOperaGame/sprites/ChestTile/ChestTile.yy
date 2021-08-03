@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 31,
   "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 32,
+  "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4d4827bc-ba08-417c-9164-dfa1db9d1377","path":"sprites/HellIsMe/HellIsMe.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4d4827bc-ba08-417c-9164-dfa1db9d1377","path":"sprites/HellIsMe/HellIsMe.yy",},"LayerId":{"name":"1733db02-0562-4f01-90c1-baf891a13baa","path":"sprites/HellIsMe/HellIsMe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"HellIsMe","path":"sprites/HellIsMe/HellIsMe.yy",},"resourceVersion":"1.0","name":"4d4827bc-ba08-417c-9164-dfa1db9d1377","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/ChestTile/ChestTile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/ChestTile/ChestTile.yy",},"LayerId":{"name":"f0c21e09-c30f-4d34-8a65-9f54f624d340","path":"sprites/ChestTile/ChestTile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"resourceVersion":"1.0","name":"2d913860-5a81-4ecf-9511-b855c593eeac","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"HellIsMe","path":"sprites/HellIsMe/HellIsMe.yy",},
+    "spriteId": {"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6fc6e321-606a-4cbb-a4f8-4ef7da94bfe5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d4827bc-ba08-417c-9164-dfa1db9d1377","path":"sprites/HellIsMe/HellIsMe.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"089a1c4b-2023-45b3-8eb5-0f872ac35b78","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/ChestTile/ChestTile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"HellIsMe","path":"sprites/HellIsMe/HellIsMe.yy",},
+    "parent": {"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},
     "resourceVersion": "1.3",
-    "name": "HellIsMe",
+    "name": "ChestTile",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1733db02-0562-4f01-90c1-baf891a13baa","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f0c21e09-c30f-4d34-8a65-9f54f624d340","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tiles",
+    "path": "folders/Sprites/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "HellIsMe",
+  "name": "ChestTile",
   "tags": [],
   "resourceType": "GMSprite",
 }
