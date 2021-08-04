@@ -3,6 +3,8 @@
     {"id":{"name":"oObject","path":"objects/oObject/oObject.yy",},"order":0,},
     {"id":{"name":"WallTile","path":"sprites/WallTile/WallTile.yy",},"order":1,},
     {"id":{"name":"Boss","path":"sprites/Boss/Boss.yy",},"order":2,},
+    {"id":{"name":"Boss2","path":"sprites/Boss2/Boss2.yy",},"order":2,},
+    {"id":{"name":"Boss3","path":"sprites/Boss3/Boss3.yy",},"order":2,},
     {"id":{"name":"FloorTile","path":"sprites/FloorTile/FloorTile.yy",},"order":1,},
     {"id":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"order":1,},
     {"id":{"name":"astronaut1","path":"sprites/astronaut1/astronaut1.yy",},"order":3,},
