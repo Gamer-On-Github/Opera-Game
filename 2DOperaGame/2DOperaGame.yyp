@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"oObject","path":"objects/oObject/oObject.yy",},"order":0,},
     {"id":{"name":"WallTile","path":"sprites/WallTile/WallTile.yy",},"order":1,},
+    {"id":{"name":"rocketbot","path":"sprites/rocketbot/rocketbot.yy",},"order":4,},
     {"id":{"name":"Boss","path":"sprites/Boss/Boss.yy",},"order":1,},
     {"id":{"name":"FloorTile","path":"sprites/FloorTile/FloorTile.yy",},"order":1,},
     {"id":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"order":1,},
