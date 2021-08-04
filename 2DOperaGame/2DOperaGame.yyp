@@ -8,7 +8,6 @@
     {"id":{"name":"FloorTile","path":"sprites/FloorTile/FloorTile.yy",},"order":1,},
     {"id":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"order":1,},
     {"id":{"name":"astronaut1","path":"sprites/astronaut1/astronaut1.yy",},"order":3,},
-    {"id":{"name":"astronaut2","path":"sprites/astronaut2/astronaut2.yy",},"order":4,},
     {"id":{"name":"astronaut3front","path":"sprites/astronaut3front/astronaut3front.yy",},"order":1,},
     {"id":{"name":"astronaut3back","path":"sprites/astronaut3back/astronaut3back.yy",},"order":0,},
     {"id":{"name":"astronaut3side","path":"sprites/astronaut3side/astronaut3side.yy",},"order":2,},
