@@ -12,6 +12,7 @@
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":0,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":0,},
     {"id":{"name":"TileWalls","path":"tilesets/TileWalls/TileWalls.yy",},"order":0,},
+    {"id":{"name":"telebot","path":"sprites/telebot/telebot.yy",},"order":3,},
     {"id":{"name":"oLevel","path":"objects/oLevel/oLevel.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
