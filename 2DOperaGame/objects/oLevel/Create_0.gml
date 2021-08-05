@@ -1,6 +1,7 @@
 randomize();
 
-
+// Create the surface for the shadows
+shadow_surface_ = noone;
 
 // Get the tile layer map id
 var _wall_map_id = layer_tilemap_get_id("WallTiles");
@@ -17,7 +18,9 @@ var _controller_y = height_ div 2;
 var _controller_direction = irandom(3);
 var _steps = 400;
 
-
+var _player_start_x = _controller_x * CELL_WIDTH + CELL_WIDTH/2;
+var _player_start_y = _controller_y * CELL_HEIGHT + CELL_HEIGHT/2;
+instance_create_layer(_player_start_x, _player_start_y, "Instances", oPlayer);
 
 // Choose the direction change odds
 var _direction_change_odds = 1;
