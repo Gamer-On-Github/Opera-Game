@@ -1,5 +1,5 @@
-var _x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-var _y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+var _x_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var _y_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 global.x_speed_ += _x_input * global.accelaration;
 global.y_speed_ += _y_input * global.accelaration;
@@ -69,3 +69,6 @@ if global.y_speed_ > 0 {
 	}
 }
 
+if keyboard_check(ord("W")){
+	
+}
