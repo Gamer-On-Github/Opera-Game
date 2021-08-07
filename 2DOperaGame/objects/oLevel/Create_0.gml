@@ -75,20 +75,24 @@ for (var _y = 1; _y < height_-1; _y++) {
 	}
 }
 
+var number_of_chests = (instance_number(oChest))
+
 // make chests
-for (var i = 0; i < width_; i+= 1){
+if (number_of_chests == 0){
+	for (var i = 2; i < width_ - 2; i+= 1){
     show_debug_message("first  for")
-    for (var j = 0; j < height_; j+= 1){
-        show_debug_message("second one")
-        var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
-        if (tile == 0){
-            show_debug_message("chest might be made")
-            if(random(1) < 0.02){
-                show_debug_message("chest made")
-                instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
-            }
-        }
-    }
+		for (var j = 2; j < height_ - 2; j+= 1){
+			show_debug_message("second one")
+			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
+			if (tile == 0){
+				show_debug_message("chest might be made")
+				if(random(1) < 0.02){
+					show_debug_message("chest made")
+					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
+				}
+			}
+		}
+	}
 }
 
 //create the player on non wall tiles by checking the one it wants to spawn on and moving it if it is a wall
