@@ -68,7 +68,3 @@ if global.y_speed_ > 0 {
 		global.y_speed_ = 0;
 	}
 }
-
-if keyboard_check(ord("W")){
-	
-}
