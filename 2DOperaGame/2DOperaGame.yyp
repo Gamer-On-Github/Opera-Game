@@ -8,6 +8,7 @@
     {"id":{"name":"Boss3","path":"sprites/Boss3/Boss3.yy",},"order":2,},
     {"id":{"name":"FloorTile","path":"sprites/FloorTile/FloorTile.yy",},"order":1,},
     {"id":{"name":"oStats","path":"objects/oStats/oStats.yy",},"order":8,},
+    {"id":{"name":"Starter","path":"sprites/Starter/Starter.yy",},"order":13,},
     {"id":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"order":1,},
     {"id":{"name":"astronaut1","path":"sprites/astronaut1/astronaut1.yy",},"order":3,},
     {"id":{"name":"astronaut2blue","path":"sprites/astronaut2blue/astronaut2blue.yy",},"order":3,},
