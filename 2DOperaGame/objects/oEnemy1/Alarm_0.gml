@@ -1,0 +1,1 @@
+global.currentHealth -= 1
