@@ -4,6 +4,7 @@
 #macro WALL -6
 #macro VOID -7
 #macro CHESTFLOOR -8
+#macro ENEMYTILE -9
 
 #macro NORTH 1
 #macro WEST 2

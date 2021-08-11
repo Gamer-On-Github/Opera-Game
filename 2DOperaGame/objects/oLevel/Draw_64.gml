@@ -20,3 +20,4 @@ if(hp == 1){
 }
 
 draw_text(10, 30, "level: " + string(global.level))
+draw_text(10, 45, "chests: " + string(instance_number(oChest)))

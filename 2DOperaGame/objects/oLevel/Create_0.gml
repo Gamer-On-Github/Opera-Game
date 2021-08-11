@@ -1,7 +1,5 @@
 randomize();
 
-
-
 // Get the tile layer map id
 var _wall_map_id = layer_tilemap_get_id("WallTiles");
 
@@ -85,8 +83,20 @@ if (number_of_chests == 0){
 		for (var j = 2; j < height_ - 2; j+= 1){
 			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
 			if (tile == 0){
-				if(random(1) < 0.02){
+				if(random(1) < 0.01){
 					grid_[# i, j] = CHESTFLOOR
+					if(grid_[# i + 1, j] == 0)
+							grid_[# i + 1, j] = ENEMYTILE
+							instance_create_layer((i + 1) * CELL_WIDTH, j * CELL_HEIGHT, "Instances", oEnemy1)
+					if(grid_[# i - 1, j] == 0)
+						if (random(1) < 0.25)
+						grid_[# i - 1, j] = ENEMYTILE
+					if(grid_[# i, j + 1] == 0)
+						if (random(1) < 0.25)
+						grid_[# i, j + 1] = ENEMYTILE
+					if(grid_[# i, j - 1] == 0)
+						if (random(1) < 0.25)
+						grid_[# i, j - 1] = ENEMYTILE
 					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
 				}
 			}
