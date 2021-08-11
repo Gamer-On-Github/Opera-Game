@@ -1,1 +1,1 @@
-hp -= 1
+global.hp -= 1

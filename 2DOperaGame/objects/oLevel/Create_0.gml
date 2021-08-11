@@ -1,5 +1,7 @@
 randomize();
 
+
+
 // Get the tile layer map id
 var _wall_map_id = layer_tilemap_get_id("WallTiles");
 
@@ -75,19 +77,16 @@ for (var _y = 1; _y < height_-1; _y++) {
 	}
 }
 
-var number_of_chests = (instance_number(oChest))
+var number_of_chests = instance_number(oChest)
 
 // make chests
 if (number_of_chests == 0){
 	for (var i = 2; i < width_ - 2; i+= 1){
-    show_debug_message("first  for")
 		for (var j = 2; j < height_ - 2; j+= 1){
-			show_debug_message("second one")
 			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
 			if (tile == 0){
-				show_debug_message("chest might be made")
 				if(random(1) < 0.02){
-					show_debug_message("chest made")
+					grid_[# i, j] = CHESTFLOOR
 					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
 				}
 			}
@@ -115,3 +114,22 @@ while (tile_get_index(tilemap_get(_wall_map_id, _controller_x, _controller_y)) >
 var _player_start_x = _controller_x * CELL_WIDTH + CELL_WIDTH / 2;
 var _player_start_y = _controller_y * CELL_HEIGHT + CELL_HEIGHT / 2;
 instance_create_layer(_player_start_x, _player_start_y, "Instances", oPlayer);
+
+
+var number_of_finish = instance_number(oFinish)
+
+// make finishing tile
+while (number_of_finish != 1){
+	for (var i = 2; i < width_ - 2; i+= 1){
+		for (var j = 2; j < height_ - 2; j+= 1){
+			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
+			if (instance_number(oFinish) == 1)
+				return;
+			if (tile == 0){
+				if(random(1) < 0.02){
+					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oFinish)
+				}
+			}
+		}
+	}
+}
