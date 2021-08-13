@@ -1,6 +1,9 @@
-  
-target_ = oPlayer;
-width_ = camera_get_view_width(view_camera[1]);
-height_ = camera_get_view_height(view_camera[1]);
-scale_ = width_ / view_get_wport(1);
-show_debug_message(scale_);
+view_width = 300
+view_height = 150
+
+windowScale = 5
+
+window_set_size(view_width*windowScale, view_height*windowScale)
+alarm[0]=1
+
+surface_resize(application_surface,view_width*windowScale, view_height*windowScale)
