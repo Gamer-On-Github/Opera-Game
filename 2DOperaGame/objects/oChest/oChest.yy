@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "ChestTile",
-    "path": "sprites/ChestTile/ChestTile.yy",
+    "name": "Medkit",
+    "path": "sprites/Medkit/Medkit.yy",
   },
   "solid": true,
   "visible": true,
