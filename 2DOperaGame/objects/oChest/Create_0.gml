@@ -1,4 +1,4 @@
 chestTriggered = false
 chestOpened = false
 
-loot = choose(1,1,2,2,3,3)
+loot = choose(1,1)

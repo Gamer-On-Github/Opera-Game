@@ -1,1 +1,2 @@
-instance_destroy(oEnemy1)
+instance_destroy(other.id)
+instance_destroy(self)

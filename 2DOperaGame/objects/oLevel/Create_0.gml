@@ -77,53 +77,49 @@ for (var _y = 1; _y < height_-1; _y++) {
 
 var number_of_chests = instance_number(oChest)
 
-// make chests
+// make chests and enemies
 if (number_of_chests == 0){
 	for (var i = 2; i < width_ - 2; i+= 1){
 		for (var j = 2; j < height_ - 2; j+= 1){
 			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
 			if (tile == 0){
 				if(random(1) < 0.01){
-					grid_[# i, j] = CHESTFLOOR
-					if(grid_[# i + 1, j] == 0)
-							grid_[# i + 1, j] = ENEMYTILE
+					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
+					var tileright = tilemap_get_at_pixel(_wall_map_id, (i + 1) * CELL_WIDTH, j * CELL_HEIGHT)
+					if(tileright == 0)
+						if(random(1) < 0.25)
 							instance_create_layer((i + 1) * CELL_WIDTH, j * CELL_HEIGHT, "Instances", oEnemy1)
-					if(grid_[# i - 1, j] == 0)
-						if (random(1) < 0.25)
-						grid_[# i - 1, j] = ENEMYTILE
-					if(grid_[# i, j + 1] == 0)
-						if (random(1) < 0.25)
-						grid_[# i, j + 1] = ENEMYTILE
+					var tileleft = tilemap_get_at_pixel(_wall_map_id, (i - 1) * CELL_WIDTH, j * CELL_HEIGHT)
+					if(tileleft == 0)
+						if(random(1) < 0.25)
+							instance_create_layer((i - 1) * CELL_WIDTH, j * CELL_HEIGHT, "Instances", oEnemy1)
+					var tiledown = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, (j + 1) * CELL_HEIGHT)
+					if(tiledown == 0)
+						if(random(1) < 0.25)
+							instance_create_layer(i * CELL_WIDTH, (j + 1) * CELL_HEIGHT, "Instances", oEnemy1)
 					if(grid_[# i, j - 1] == 0)
 						if (random(1) < 0.25)
-						grid_[# i, j - 1] = ENEMYTILE
-					instance_create_depth(i * CELL_WIDTH, j * CELL_HEIGHT, 0, oChest)
+							instance_create_layer(i * CELL_WIDTH, (j + 1) * CELL_HEIGHT, "Instances", oEnemy1)
 				}
 			}
 		}
 	}
 }
 
-//create the player on non wall tiles by checking the one it wants to spawn on and moving it if it is a wall
-while (tile_get_index(tilemap_get(_wall_map_id, _controller_x, _controller_y)) > 0) {
-    var directions = [];
-    if (_controller_x > 1)
-        array_push(directions, { x: -1, y: 0 });
-    if (_controller_x < tilemap_get_width(_wall_map_id) - 1)
-        array_push(directions, { x: 1, y: 0 });
-    if (_controller_y > 1)
-        array_push(directions, { x: 0, y: -1 });
-    if (_controller_y < tilemap_get_height(_wall_map_id) - 1)
-        array_push(directions, { x: 0, y: 1 });
-        
-    var dir = directions[irandom(array_length(directions) - 1)];
-    _controller_x += dir.x;
-    _controller_y += dir.y;
+var floors = ds_list_create();
+for (var i = 2; i < width_ - 2; i += 1) {
+  for (var j = 2; j < height_ - 2; j += 1) {
+    var index = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT);
+    if (index == 0) {
+      ds_list_add(floors, {x: i * CELL_WIDTH, y: j * CELL_HEIGHT});
+    }
+  }
 }
-
-var _player_start_x = _controller_x * CELL_WIDTH + CELL_WIDTH / 2;
-var _player_start_y = _controller_y * CELL_HEIGHT + CELL_HEIGHT / 2;
-instance_create_layer(_player_start_x, _player_start_y, "Instances", oPlayer);
+ds_list_shuffle(floors);
+var offset = CELL_HEIGHT / 2;
+instance_create_layer
+(floors[| 0].x + offset, floors[| 0].y + offset, "Instances", oPlayer);
+ds_list_destroy(floors);
 
 
 var number_of_finish = instance_number(oFinish)
