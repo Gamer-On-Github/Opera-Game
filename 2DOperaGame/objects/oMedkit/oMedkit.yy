@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Starter",
-    "path": "sprites/Starter/Starter.yy",
+    "name": "Heart",
+    "path": "sprites/Heart/Heart.yy",
   },
   "solid": false,
   "visible": true,
