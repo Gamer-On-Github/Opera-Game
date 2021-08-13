@@ -1,1 +1,1 @@
-global.hp -= 1
+global.currentHealth -= 1

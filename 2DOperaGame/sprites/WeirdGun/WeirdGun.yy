@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_right": 25,
+  "bbox_top": 6,
+  "bbox_bottom": 23,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/s_floor_tile/s_floor_tile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/s_floor_tile/s_floor_tile.yy",},"LayerId":{"name":"f0c21e09-c30f-4d34-8a65-9f54f624d340","path":"sprites/s_floor_tile/s_floor_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_floor_tile","path":"sprites/s_floor_tile/s_floor_tile.yy",},"resourceVersion":"1.0","name":"2d913860-5a81-4ecf-9511-b855c593eeac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"85f356dc-e924-4eda-a664-a6537e52ef4a","path":"sprites/WeirdGun/WeirdGun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"85f356dc-e924-4eda-a664-a6537e52ef4a","path":"sprites/WeirdGun/WeirdGun.yy",},"LayerId":{"name":"0e9063f2-958d-499c-883c-209a18fa9619","path":"sprites/WeirdGun/WeirdGun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"WeirdGun","path":"sprites/WeirdGun/WeirdGun.yy",},"resourceVersion":"1.0","name":"85f356dc-e924-4eda-a664-a6537e52ef4a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_floor_tile","path":"sprites/s_floor_tile/s_floor_tile.yy",},
+    "spriteId": {"name":"WeirdGun","path":"sprites/WeirdGun/WeirdGun.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c095c9b5-618e-4125-8fd4-605b58f93149","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d913860-5a81-4ecf-9511-b855c593eeac","path":"sprites/s_floor_tile/s_floor_tile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"94ea5c45-b62a-4c98-a1d0-83851d384b19","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85f356dc-e924-4eda-a664-a6537e52ef4a","path":"sprites/WeirdGun/WeirdGun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_floor_tile","path":"sprites/s_floor_tile/s_floor_tile.yy",},
+    "parent": {"name":"WeirdGun","path":"sprites/WeirdGun/WeirdGun.yy",},
     "resourceVersion": "1.3",
-    "name": "s_floor_tile",
+    "name": "WeirdGun",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f0c21e09-c30f-4d34-8a65-9f54f624d340","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0e9063f2-958d-499c-883c-209a18fa9619","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_floor_tile",
+  "name": "WeirdGun",
   "tags": [],
   "resourceType": "GMSprite",
 }

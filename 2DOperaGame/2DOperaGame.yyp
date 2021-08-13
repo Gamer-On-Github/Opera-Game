@@ -1,56 +1,40 @@
 {
   "resources": [
-    {"id":{"name":"WallTile","path":"sprites/WallTile/WallTile.yy",},"order":1,},
+    {"id":{"name":"WallTile","path":"sprites/WallTile/WallTile.yy",},"order":0,},
     {"id":{"name":"Boss","path":"sprites/Boss/Boss.yy",},"order":2,},
-    {"id":{"name":"NewTile","path":"sprites/NewTile/NewTile.yy",},"order":12,},
+    {"id":{"name":"NewTile","path":"sprites/NewTile/NewTile.yy",},"order":2,},
     {"id":{"name":"grid_place_meeting","path":"scripts/grid_place_meeting/grid_place_meeting.yy",},"order":1,},
+    {"id":{"name":"oGunVisual","path":"objects/oGunVisual/oGunVisual.yy",},"order":10,},
     {"id":{"name":"Boss2","path":"sprites/Boss2/Boss2.yy",},"order":2,},
     {"id":{"name":"Boss3","path":"sprites/Boss3/Boss3.yy",},"order":2,},
-    {"id":{"name":"FloorTile","path":"sprites/FloorTile/FloorTile.yy",},"order":1,},
-<<<<<<< Updated upstream
     {"id":{"name":"oStats","path":"objects/oStats/oStats.yy",},"order":8,},
-<<<<<<< Updated upstream
     {"id":{"name":"Starter","path":"sprites/Starter/Starter.yy",},"order":13,},
-=======
-    {"id":{"name":"oStats","path":"objects/oStats/oStats.yy",},"order":7,},
->>>>>>> Stashed changes
     {"id":{"name":"ChestTile","path":"sprites/ChestTile/ChestTile.yy",},"order":1,},
-=======
-    {"id":{"name":"Medkit","path":"sprites/Medkit/Medkit.yy",},"order":1,},
->>>>>>> Stashed changes
     {"id":{"name":"astronaut1","path":"sprites/astronaut1/astronaut1.yy",},"order":3,},
+    {"id":{"name":"oEnemyDamage","path":"objects/oEnemyDamage/oEnemyDamage.yy",},"order":11,},
     {"id":{"name":"astronaut2blue","path":"sprites/astronaut2blue/astronaut2blue.yy",},"order":3,},
     {"id":{"name":"astronaut3front","path":"sprites/astronaut3front/astronaut3front.yy",},"order":1,},
     {"id":{"name":"astronaut3back","path":"sprites/astronaut3back/astronaut3back.yy",},"order":0,},
     {"id":{"name":"astronaut3side","path":"sprites/astronaut3side/astronaut3side.yy",},"order":2,},
-<<<<<<< Updated upstream
-    {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},"order":3,},
-=======
-    {"id":{"name":"Sprite17","path":"sprites/Sprite17/Sprite17.yy",},"order":2,},
+    {"id":{"name":"oEnemy1","path":"objects/oEnemy1/oEnemy1.yy",},"order":9,},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},"order":4,},
->>>>>>> Stashed changes
     {"id":{"name":"rBoss","path":"rooms/rBoss/rBoss.yy",},"order":2,},
+    {"id":{"name":"bullet","path":"sprites/bullet/bullet.yy",},"order":12,},
     {"id":{"name":"gunbot","path":"sprites/gunbot/gunbot.yy",},"order":5,},
     {"id":{"name":"round_n","path":"scripts/round_n/round_n.yy",},"order":2,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":0,},
-<<<<<<< Updated upstream
-    {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":6,},
-    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":2,},
-=======
-    {"id":{"name":"Boss4","path":"sprites/Boss4/Boss4.yy",},"order":12,},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":7,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},
->>>>>>> Stashed changes
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":0,},
-    {"id":{"name":"oDamage","path":"objects/oDamage/oDamage.yy",},"order":5,},
-    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
+    {"id":{"name":"oDamage","path":"objects/oDamage/oDamage.yy",},"order":6,},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":2,},
     {"id":{"name":"TileWalls","path":"tilesets/TileWalls/TileWalls.yy",},"order":0,},
-    {"id":{"name":"oMouse","path":"objects/oMouse/oMouse.yy",},"order":4,},
+    {"id":{"name":"oMouse","path":"objects/oMouse/oMouse.yy",},"order":5,},
     {"id":{"name":"telebot","path":"sprites/telebot/telebot.yy",},"order":6,},
+    {"id":{"name":"sndShoot","path":"sounds/sndShoot/sndShoot.yy",},"order":0,},
     {"id":{"name":"rStats","path":"rooms/rStats/rStats.yy",},"order":1,},
-    {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":12,},
     {"id":{"name":"Heart","path":"sprites/Heart/Heart.yy",},"order":11,},
-    {"id":{"name":"oLevel","path":"objects/oLevel/oLevel.yy",},"order":0,},
+    {"id":{"name":"oLevel","path":"objects/oLevel/oLevel.yy",},"order":1,},
     {"id":{"name":"rRandom","path":"rooms/rRandom/rRandom.yy",},"order":0,},
   ],
   "Options": [
@@ -83,7 +67,7 @@
     {"folderPath":"folders/Rooms.yy","order":10,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sequences.yy","order":11,"resourceVersion":"1.0","name":"Sequences","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/Notes.yy","order":8,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tiles.yy","order":1,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/astronaut3.yy","order":10,"resourceVersion":"1.0","name":"astronaut3","tags":[],"resourceType":"GMFolder",},
