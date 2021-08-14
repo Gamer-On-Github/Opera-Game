@@ -1,5 +1,5 @@
-view_width = 300
-view_height = 150
+view_width = 200
+view_height = 100
 
 windowScale = 5
 

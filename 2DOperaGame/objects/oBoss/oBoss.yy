@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "gunbot",
-    "path": "sprites/gunbot/gunbot.yy",
+    "name": "Boss3",
+    "path": "sprites/Boss3/Boss3.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "gunbot",
-    "path": "sprites/gunbot/gunbot.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -23,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oEnemy1",
+  "name": "oBoss",
   "tags": [],
   "resourceType": "GMObject",
 }

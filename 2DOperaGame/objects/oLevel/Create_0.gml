@@ -78,7 +78,7 @@ for (var _y = 1; _y < height_-1; _y++) {
 var number_of_chests = instance_number(oChest)
 
 // make chests and enemies
-if (number_of_chests == 0){
+while(number_of_chests == 0){
 	for (var i = 2; i < width_ - 2; i+= 1){
 		for (var j = 2; j < height_ - 2; j+= 1){
 			var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
@@ -97,10 +97,20 @@ if (number_of_chests == 0){
 					if(tiledown == 0)
 						if(random(1) < 0.25)
 							instance_create_layer(i * CELL_WIDTH, (j + 1) * CELL_HEIGHT, "Instances", oEnemy1)
-					if(grid_[# i, j - 1] == 0)
-						if (random(1) < 0.25)
-							instance_create_layer(i * CELL_WIDTH, (j + 1) * CELL_HEIGHT, "Instances", oEnemy1)
+			
 				}
+			}
+		}
+	}
+	number_of_chests = instance_number(oChest)
+}
+
+for (var i = 2; i < width_ - 2; i+= 1){
+	for (var j = 2; j < height_ - 2; j+= 1){
+		var tile = tilemap_get_at_pixel(_wall_map_id, i * CELL_WIDTH, j * CELL_HEIGHT)
+		if (tile == 0){
+			if (random(1) < 0.01){
+				instance_create_layer(i * CELL_WIDTH, j * CELL_HEIGHT, "Instances", oEnemy1)
 			}
 		}
 	}
